@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid red !important; */
+}
+
+:root {
+  --card-background-orange: hsl(31, 77%, 52%);
+  --card-background-dark-cyan: hsl(184, 100%, 22%);
+  --card-background-extra-dark-cyan: hsl(179, 100%, 13%);
+
+  --para-white: hsla(0, 0%, 100%, 0.75);
+  --primary-gray: hsl(0, 0%, 95%);
+}
+
+/* ============================ */
+/* --------- CSS Reset -------- */
+/* ============================ */
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background-color: var(--primary-gray);
+}
+
+main {
+  padding: 3rem 0;
+  display: flex;
+  background-color: var(--primary-gray);
+  flex-direction: column;
+  margin: auto;
+  max-width: 375px;
+}
+
+/* ============================ */
+/* ------------ Main ---------- */
+/* ============================ */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-self: normal;
+}
+
+.card1 {
+  background-color: var(--card-background-orange);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.card2 {
+  background-color: var(--card-background-dark-cyan);
+}
+.card3 {
+  background-color: var(--card-background-extra-dark-cyan);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.card-image {
+  width: max-content;
+}
+
+.card-heading {
+  margin-top: 1rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--primary-gray);
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+.card-description {
+  color: var(--para-white);
+  margin-bottom: 2rem;
+  max-width: 90%;
+  font-size: 1.15rem;
+}
+
+.card-link {
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  background-color: var(--primary-gray);
+  border: 2px solid var(--primary-gray);
+  text-decoration: none;
+  padding: 0.7rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.card-link1 {
+  color: var(--card-background-orange);
+}
+
+.card-link2 {
+  color: var(--card-background-dark-cyan);
+}
+
+.card-link3 {
+  color: var(--card-background-extra-dark-cyan);
+}
+
+.card-link1:hover {
+  color: var(--primary-gray);
+  background-color: var(--card-background-orange);
+}
+.card-link2:hover {
+  color: var(--primary-gray);
+  background-color: var(--card-background-dark-cyan);
+}
+.card-link3:hover {
+  color: var(--primary-gray);
+  background-color: var(--card-background-extra-dark-cyan);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.attribution span {
+  display: block;
+}
+
+
+
+/* ============================ */
+/* ------- Media Queries ------ */
+/* ============================ */
+@media screen and (min-width: 1240px) {
+  main {
+    flex-direction: row;
+    max-width: 1440px;
+    width: 90%;
+    padding: 6rem;
+  }
+
+  .card1 {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+  }
+  .card3 {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .attribution span {
+    display: inline;
+  }
+}
