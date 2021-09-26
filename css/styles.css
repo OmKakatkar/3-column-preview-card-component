@@ -43,7 +43,7 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 3rem 2rem;
   align-self: normal;
 }
 
@@ -133,8 +133,6 @@ footer {
   display: block;
 }
 
-
-
 /* ============================ */
 /* ------- Media Queries ------ */
 /* ============================ */
@@ -150,7 +148,6 @@ footer {
     border-top-right-radius: 0px;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-
   }
   .card3 {
     border-top-right-radius: 8px;
@@ -160,14 +157,14 @@ footer {
 
   .card-description {
     margin-bottom: 4rem;
-    font-size: 1rem;
+    font-size: 1.13rem;
   }
 
   footer {
     flex-direction: row;
     justify-content: center;
   }
-  
+
   .attribution span {
     display: inline;
   }
